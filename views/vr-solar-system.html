@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceVerse - VR Solar System</title>
+    <link rel="stylesheet" href="/public/stylesheets/style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #0D1117;
+            color: #E6F1FF;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            border: 1px solid rgba(100, 255, 218, 0.2);
+        }
+        
+        h1 {
+            color: #64FFDA;
+            margin-bottom: 1rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            margin: 10px;
+            background: rgba(100, 255, 218, 0.1);
+            color: #64FFDA;
+            border: 2px solid #64FFDA;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: rgba(100, 255, 218, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(90deg, #64FFDA, #00FFFF);
+            color: #0D1117;
+            border: none;
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(90deg, #5ae6c8, #00e5e5);
+        }
+        
+        .info-box {
+            background: rgba(255, 255, 255, 0.08);
+            border-left: 4px solid #64FFDA;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            text-align: left;
+            border-radius: 0 10px 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SpaceVerse VR Experience</h1>
+        <p>We've encountered issues with the advanced VR libraries and have prepared alternative experiences for you.</p>
+        
+        <div class="info-box">
+            <h3>Current Status</h3>
+            <p>The advanced WebXR libraries required for the full VR experience are not loading properly. This is a known issue that we're working to resolve.</p>
+            <p>In the meantime, we've prepared simplified alternatives that still allow you to explore our solar system.</p>
+        </div>
+        
+        <h2>Alternative Experiences</h2>
+        <p>Choose one of the following options:</p>
+        
+        <a href="/vr-fallback" class="btn btn-primary"> Enhanced 2D Experience </a>
+        <a href="/vr-pure-html" class="btn"> Interactive 3D Experience </a>
+        <a href="/" class="btn"> ← Back to Home </a>
+        
+        <div style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.7;">
+            <p>If you'd like to try the original VR experience again, you can visit <a href="/vr-solar-system-original" style="color: #64FFDA;">/vr-solar-system-original</a></p>
+        </div>
+    </div>
+    
+    <script>
+        // Redirect to fallback automatically after 5 seconds
+        setTimeout(() => {
+            window.location.href = '/vr-fallback';
+        }, 5000);
+    </script>
+</body>
+</html>

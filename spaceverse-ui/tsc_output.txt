@@ -1,0 +1,2 @@
+src/components/layout/Navbar.tsx(5,1): error TS6133: 'Button' is declared but its value is never read.
+src/components/sections/Missions.tsx(38,37): error TS6133: 'i' is declared but its value is never read.
