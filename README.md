@@ -1,4 +1,4 @@
-# Spaceverse Final 🚀
+# Spaceverse 🚀
 
 An interactive 3D educational platform for exploring our Solar System with authentication, quizzes, user reviews, and an AI-powered Space Traffic Simulator.
 
