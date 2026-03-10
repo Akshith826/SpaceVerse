@@ -32,7 +32,7 @@ An interactive 3D educational platform for exploring our Solar System with authe
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/karthikguntoju/spaceverse
+   git clone https://github.com/Akshith826/SpaceVerse
    cd Spaceverse_final
    ```
 
